@@ -26,10 +26,12 @@ export function ListeningDashboard({ history }: { history: History }) {
           <li key={`${t.id}-${t.played_at}`}>
             {t.image ? <img src={t.image} alt="" /> : <div className="art-placeholder" />}
             <div className="track-meta">
-              <span className="track-title">{t.name}</span>
+              <span className="track-title" title={t.name}>
+                {t.name}
+              </span>
               <span className="muted small">{t.artists.join(', ')}</span>
             </div>
-            <span className="muted small">{timeAgo(t.played_at)}</span>
+            <span className="muted small track-date">{timeAgo(t.played_at)}</span>
           </li>
         ))}
       </ol>
