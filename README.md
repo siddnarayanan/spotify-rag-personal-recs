@@ -6,6 +6,9 @@ A personal music recommendation **agent** that grounds its suggestions in *your*
 
 The agent retrieves what you've actually been playing from a local vector store. It reasons about your taste, proposes new tracks, filters out songs you already know, checks each pick against the Spotify catalog, and explains every recommendation with evidence from your history.
 
+## Demo
+
+
 ## Highlights
 
 - **RAG over personal data.** Listening history is turned into semantically rich documents (tracks, artists, time-range "taste" summaries, daily sessions, playlists). They are embedded locally with Hugging Face `sentence-transformers` and stored in a persistent **Chroma** index.
