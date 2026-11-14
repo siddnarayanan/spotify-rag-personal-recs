@@ -9,6 +9,13 @@ The agent retrieves what you've actually been playing from a local vector store.
 ## Demo
 
 
+
+
+https://github.com/user-attachments/assets/a321e88f-797c-46ac-b1cb-37499bf7f0ea
+
+
+
+
 ## Highlights
 
 - **RAG over personal data.** Listening history is turned into semantically rich documents (tracks, artists, time-range "taste" summaries, daily sessions, playlists). They are embedded locally with Hugging Face `sentence-transformers` and stored in a persistent **Chroma** index.
