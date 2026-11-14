@@ -6,17 +6,19 @@ from typing import Literal
 
 from langchain_core.documents import Document
 
-from app.rag.index import ensure_index, get_vectorstore
+from app.rag.index import ensure_index, get_vectorstore, index_lock
 
 DocType = Literal["track", "artist", "period", "session", "playlists"]
 
 
 def retrieve(query: str, doc_type: DocType | None = None, k: int = 8) -> list[Document]:
     """Maximal-marginal-relevance search, so results are relevant but not redundant."""
-    ensure_index()
-    vs = get_vectorstore()
     kwargs = {"filter": {"doc_type": doc_type}} if doc_type else {}
-    return vs.max_marginal_relevance_search(query, k=k, fetch_k=max(30, k * 4), **kwargs)
+    with index_lock:
+        ensure_index()
+        return get_vectorstore().max_marginal_relevance_search(
+            query, k=k, fetch_k=max(30, k * 4), **kwargs
+        )
 
 
 def format_docs(docs: list[Document]) -> str:

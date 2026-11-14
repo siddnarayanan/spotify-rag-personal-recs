@@ -48,7 +48,8 @@ export default function App() {
       {error && <p className="error">{error}</p>}
       {status && !status.llm_configured && (
         <p className="notice">
-          <code>ANTHROPIC_API_KEY</code> is not set, so recommendations and chat are disabled.
+          No Anthropic credentials found. Set <code>ANTHROPIC_API_KEY</code> or run{' '}
+          <code>ant auth login</code>, then restart the backend.
         </p>
       )}
 

@@ -42,7 +42,7 @@ def test_sync_disabled_in_demo(client):
 
 def test_recommend_without_api_key(client):
     r = client.post("/api/recommend", json={})
-    assert r.status_code == 500 and "ANTHROPIC_API_KEY" in r.json()["detail"]
+    assert r.status_code == 500 and "ant auth login" in r.json()["detail"]
 
 
 def test_recommend_streams_tool_steps_and_cards(client, monkeypatch):

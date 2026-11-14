@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
-from functools import lru_cache
+from functools import cached_property, lru_cache
+from typing import Any
 
+from anthropic.lib.credentials import default_credentials
 from langchain.agents import create_agent
-from langchain.agents.structured_output import ToolStrategy
+from langchain.agents.structured_output import ProviderStrategy
 from langchain_anthropic import ChatAnthropic
 from langgraph.checkpoint.memory import InMemorySaver
 
@@ -21,12 +23,42 @@ class AgentConfigError(RuntimeError):
     pass
 
 
+class ProfileAwareChatAnthropic(ChatAnthropic):
+    """ChatAnthropic that can also authenticate with an `ant auth login` profile.
+
+    ChatAnthropic always passes ``api_key`` to the SDK, even when it's empty, which
+    stops the SDK from running its credential chain. When no key is configured we
+    leave ``api_key`` out, so the SDK finds the profile in ~/.config/anthropic and
+    refreshes the OAuth token itself.
+    """
+
+    @cached_property
+    def _client_params(self) -> dict[str, Any]:
+        params = dict(super()._client_params)
+        if not params.get("api_key"):
+            params.pop("api_key", None)
+        return params
+
+
+def llm_credentials_available() -> bool:
+    """True if an API key is configured or the SDK can find profile/env credentials."""
+    if get_settings().anthropic_api_key:
+        return True
+    try:
+        return default_credentials() is not None
+    except Exception:  # e.g. no config dir / profile found
+        return False
+
+
 def _model() -> ChatAnthropic:
     s = get_settings()
-    if not s.anthropic_api_key:
-        raise AgentConfigError("ANTHROPIC_API_KEY is not set.")
-    return ChatAnthropic(
-        model=s.anthropic_model, api_key=s.anthropic_api_key, max_tokens=4096, timeout=120
+    if not llm_credentials_available():
+        raise AgentConfigError(
+            "No Anthropic credentials found. Set ANTHROPIC_API_KEY or run `ant auth login`."
+        )
+    kwargs: dict[str, Any] = {"api_key": s.anthropic_api_key} if s.anthropic_api_key else {}
+    return ProfileAwareChatAnthropic(
+        model=s.anthropic_model, max_tokens=4096, timeout=120, **kwargs
     )
 
 
@@ -36,7 +68,9 @@ def recommender_agent():
         _model(),
         tools=TOOLS,
         system_prompt=SYSTEM_PROMPT,
-        response_format=ToolStrategy(RecommendationList),
+        # Native structured output (Claude's JSON-schema output), not a forced tool call:
+        # newer Claude models don't accept tool_choice="any", which ToolStrategy relies on.
+        response_format=ProviderStrategy(RecommendationList),
     )
 
 

@@ -17,6 +17,7 @@ from app.agent.agent import (
     build_request,
     chat_agent,
     finalize,
+    llm_credentials_available,
     recommender_agent,
 )
 from app.agent.tools import TOOLS
@@ -50,7 +51,7 @@ def status() -> dict:
         "demo_mode": s.demo_mode,
         "spotify_configured": s.has_spotify_credentials,
         "authenticated": s.demo_mode or auth.is_authenticated(),
-        "llm_configured": bool(s.anthropic_api_key),
+        "llm_configured": llm_credentials_available(),
         "last_sync": meta.get("last_sync"),
         "next_sync": next_sync_time(),
         "counts": meta.get("counts", {}),

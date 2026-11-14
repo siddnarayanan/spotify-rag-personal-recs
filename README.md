@@ -9,7 +9,7 @@ The agent retrieves what you've actually been playing from a local vector store.
 ## Highlights
 
 - **RAG over personal data.** Listening history is turned into semantically rich documents (tracks, artists, time-range "taste" summaries, daily sessions, playlists). They are embedded locally with Hugging Face `sentence-transformers` and stored in a persistent **Chroma** index.
-- **Tool-calling agent.** A LangChain `create_agent` agent (Claude) decides what to retrieve and when. It has four tools: semantic history search, aggregate stats, an "already known?" check, and a cached Spotify catalog lookup. Its output is **structured** (Pydantic) through LangChain's `ToolStrategy`.
+- **Tool-calling agent.** A LangChain `create_agent` agent (Claude) decides what to retrieve and when. It has four tools: semantic history search, aggregate stats, an "already known?" check, and a cached Spotify catalog lookup. Its output is **structured** (Pydantic) through LangChain's `ProviderStrategy`, which uses Claude's native JSON-schema output.
 - **Built around Spotify's rate limits.** Spotify is hit at most **once a day** by a scheduled sync. Catalog lookups go through a 7-day on-disk HTTP cache, and `429 Retry-After` is honoured with backoff.
 - **Guardrails in code, not only in prompts.** A deterministic post-processing step removes tracks already in your library and duplicates, then attaches real Spotify links and album art.
 - **Streaming UX.** Agent tool steps and recommendation cards stream to the UI over Server-Sent Events. A multi-turn chat streams tokens live.
@@ -75,7 +75,7 @@ Spotify also returns only your **last 50 plays**. The daily sync therefore **app
 
 | Layer | Tools |
 |---|---|
-| LLM / agent | LangChain 1.x (`create_agent`, `ToolStrategy` structured output), LangGraph checkpointer for chat memory, Claude via `langchain-anthropic` |
+| LLM / agent | LangChain 1.x (`create_agent`, `ProviderStrategy` structured output), LangGraph checkpointer for chat memory, Claude via `langchain-anthropic` |
 | Retrieval | Chroma (`langchain-chroma`), `sentence-transformers/all-MiniLM-L6-v2` (`langchain-huggingface`), MMR search |
 | Backend | Python 3.12, FastAPI, sse-starlette, APScheduler, spotipy, requests-cache, pydantic-settings, uv |
 | Frontend | React 19, TypeScript, Vite |
@@ -83,7 +83,10 @@ Spotify also returns only your **last 50 plays**. The daily sync therefore **app
 
 ## Getting started
 
-**Prerequisites:** [uv](https://docs.astral.sh/uv/), Node 20+, and an [Anthropic API key](https://console.anthropic.com).
+**Prerequisites:** [uv](https://docs.astral.sh/uv/), Node 20+, and Anthropic credentials. Use either:
+
+- an [API key](https://console.anthropic.com) in `ANTHROPIC_API_KEY`, or
+- the Anthropic CLI: `brew install ant && ant auth login`. Leave `ANTHROPIC_API_KEY` blank and the SDK picks up the profile and refreshes its token automatically. (`ChatAnthropic` always sends an `api_key`, which skips the SDK's credential chain, so the backend uses a small subclass to fix that.)
 
 ```bash
 git clone https://github.com/siddnarayanan/spotify-rag-personal-recs.git
@@ -96,7 +99,7 @@ cd frontend && npm install && cd ..
 
 ### Option A: demo mode (no Spotify account needed)
 
-Set `DEMO_MODE=true` in `backend/.env`. You still need `ANTHROPIC_API_KEY`. Then run:
+Set `DEMO_MODE=true` in `backend/.env`. You still need Anthropic credentials (see above). Then run:
 
 ```bash
 # terminal 1

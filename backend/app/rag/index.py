@@ -20,7 +20,11 @@ from app.rag.documents import build_documents
 
 log = logging.getLogger(__name__)
 COLLECTION = "listening_history"
-_lock = threading.Lock()
+# Re-entrant lock guarding the Chroma client. The agent's ToolNode runs parallel tool
+# calls in a thread pool, and creating/querying the client from several threads at
+# once is not safe. Local queries take milliseconds, so serialising them is cheap.
+# Hold this lock whenever you call get_vectorstore().
+index_lock = threading.RLock()
 
 
 @lru_cache
@@ -49,7 +53,8 @@ def _hash_path():
 
 def build_index(force: bool = False) -> int:
     """(Re)build the index from the cache if its contents changed. Returns doc count."""
-    with _lock:
+    with index_lock:
+        vs = get_vectorstore()  # also warms the client + embedding model at startup
         docs = build_documents(store.load_all())
         digest = hashlib.sha256(
             "\n".join(sorted(d.page_content for d in docs)).encode()
@@ -59,7 +64,6 @@ def build_index(force: bool = False) -> int:
             log.info("Index up to date (%d docs).", len(docs))
             return len(docs)
 
-        vs = get_vectorstore()
         existing = vs.get(include=[])["ids"]
         if existing:
             vs.delete(ids=existing)

@@ -31,6 +31,20 @@ def test_index_is_rebuilt_only_when_content_changes():
     assert len(get_vectorstore().get(include=[])["ids"]) == n
 
 
+def test_parallel_retrieval_on_cold_store_is_safe():
+    # The agent's ToolNode runs parallel tool calls in threads; the first calls
+    # must not race to create the Chroma client.
+    from concurrent.futures import ThreadPoolExecutor
+
+    build_index()
+    from app.rag.index import get_vectorstore
+
+    get_vectorstore.cache_clear()
+    with ThreadPoolExecutor(8) as pool:
+        results = list(pool.map(lambda q: retrieve(q, k=3), [f"query {i}" for i in range(16)]))
+    assert all(len(r) == 3 for r in results)
+
+
 def test_retrieve_filters_by_doc_type():
     build_index()
     docs = retrieve("anything", doc_type="artist", k=5)

@@ -18,6 +18,10 @@ def isolated_env(tmp_path, monkeypatch):
     monkeypatch.setenv("DATA_DIR", str(data))
     monkeypatch.setenv("DEMO_MODE", "true")
     monkeypatch.setenv("ANTHROPIC_API_KEY", "")
+    monkeypatch.delenv("ANTHROPIC_AUTH_TOKEN", raising=False)
+    monkeypatch.delenv("ANTHROPIC_PROFILE", raising=False)
+    # Hide any local `ant auth login` profile so tests behave the same everywhere.
+    monkeypatch.setenv("ANTHROPIC_CONFIG_DIR", str(tmp_path / "no-anthropic-config"))
     monkeypatch.setenv("SPOTIFY_CLIENT_ID", "")
     monkeypatch.setenv("SPOTIFY_CLIENT_SECRET", "")
 

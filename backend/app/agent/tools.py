@@ -15,7 +15,7 @@ from langchain_core.tools import tool
 from app.agent.library import get_library
 from app.rag.documents import RANGE_LABEL
 from app.rag.retriever import format_docs, retrieve
-from app.spotify.client import search_track
+from app.spotify.client import search_client, search_track
 
 
 @tool
@@ -78,9 +78,15 @@ def check_already_known(candidates: list[str]) -> str:
 def lookup_spotify_track(title: str, artist: str) -> str:
     """Verify a track exists in Spotify's catalog (cached). Returns its canonical
     title/artist/album or 'NOT FOUND'. Always verify before recommending."""
+    if search_client() is None:
+        return (
+            "UNAVAILABLE: this app is running in demo mode without Spotify credentials, so "
+            "catalog verification is skipped. That's expected: the UI links each pick to a "
+            "Spotify search instead. Only recommend tracks you're confident exist."
+        )
     t = search_track(title, artist)
     if t is None:
-        return "NOT FOUND (or Spotify search unavailable)"
+        return "NOT FOUND"
     return json.dumps({k: t[k] for k in ("name", "artists", "album", "release_year", "popularity")})
 
 
