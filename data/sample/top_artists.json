@@ -1,0 +1,324 @@
+{
+  "short_term": [
+    {
+      "id": "sample-artist-tame-impala",
+      "name": "Tame Impala",
+      "genres": [
+        "psychedelic rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-frank-ocean",
+      "name": "Frank Ocean",
+      "genres": [
+        "alternative r&b"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-jamie-xx",
+      "name": "Jamie xx",
+      "genres": [
+        "electronica",
+        "uk garage"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-beach-house",
+      "name": "Beach House",
+      "genres": [
+        "dream pop"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-clairo",
+      "name": "Clairo",
+      "genres": [
+        "bedroom pop",
+        "indie pop"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-sza",
+      "name": "SZA",
+      "genres": [
+        "r&b"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-arctic-monkeys",
+      "name": "Arctic Monkeys",
+      "genres": [
+        "indie rock",
+        "garage rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-bonobo",
+      "name": "Bonobo",
+      "genres": [
+        "downtempo",
+        "electronica"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-phoebe-bridgers",
+      "name": "Phoebe Bridgers",
+      "genres": [
+        "indie folk"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-kavinsky",
+      "name": "Kavinsky",
+      "genres": [
+        "synthwave"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    }
+  ],
+  "medium_term": [
+    {
+      "id": "sample-artist-arctic-monkeys",
+      "name": "Arctic Monkeys",
+      "genres": [
+        "indie rock",
+        "garage rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-tame-impala",
+      "name": "Tame Impala",
+      "genres": [
+        "psychedelic rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-frank-ocean",
+      "name": "Frank Ocean",
+      "genres": [
+        "alternative r&b"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-the-strokes",
+      "name": "The Strokes",
+      "genres": [
+        "indie rock",
+        "garage rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-mac-demarco",
+      "name": "Mac DeMarco",
+      "genres": [
+        "indie rock",
+        "slacker rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-phoebe-bridgers",
+      "name": "Phoebe Bridgers",
+      "genres": [
+        "indie folk"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-tyler,-the-creator",
+      "name": "Tyler, The Creator",
+      "genres": [
+        "hip hop",
+        "alternative hip hop"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-sza",
+      "name": "SZA",
+      "genres": [
+        "r&b"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-m83",
+      "name": "M83",
+      "genres": [
+        "synthpop",
+        "shoegaze"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-clairo",
+      "name": "Clairo",
+      "genres": [
+        "bedroom pop",
+        "indie pop"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    }
+  ],
+  "long_term": [
+    {
+      "id": "sample-artist-radiohead",
+      "name": "Radiohead",
+      "genres": [
+        "art rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-arctic-monkeys",
+      "name": "Arctic Monkeys",
+      "genres": [
+        "indie rock",
+        "garage rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-the-strokes",
+      "name": "The Strokes",
+      "genres": [
+        "indie rock",
+        "garage rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-frank-ocean",
+      "name": "Frank Ocean",
+      "genres": [
+        "alternative r&b"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-tame-impala",
+      "name": "Tame Impala",
+      "genres": [
+        "psychedelic rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-david-bowie",
+      "name": "David Bowie",
+      "genres": [
+        "art rock",
+        "glam rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-fleetwood-mac",
+      "name": "Fleetwood Mac",
+      "genres": [
+        "soft rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-childish-gambino",
+      "name": "Childish Gambino",
+      "genres": [
+        "funk",
+        "neo soul"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-the-beatles",
+      "name": "The Beatles",
+      "genres": [
+        "rock",
+        "british invasion"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    },
+    {
+      "id": "sample-artist-mac-demarco",
+      "name": "Mac DeMarco",
+      "genres": [
+        "indie rock",
+        "slacker rock"
+      ],
+      "popularity": null,
+      "url": null,
+      "image": null
+    }
+  ]
+}

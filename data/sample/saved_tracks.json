@@ -1,0 +1,290 @@
+[
+  {
+    "added_at": "2026-09-11T12:00:00Z",
+    "id": "sample-011",
+    "name": "Motion Sickness",
+    "artists": [
+      "Phoebe Bridgers"
+    ],
+    "artist_ids": [
+      "sample-artist-phoebe-bridgers"
+    ],
+    "album": "Stranger in the Alps",
+    "release_year": "2017",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-05-07T12:00:00Z",
+    "id": "sample-004",
+    "name": "Let It Happen",
+    "artists": [
+      "Tame Impala"
+    ],
+    "artist_ids": [
+      "sample-artist-tame-impala"
+    ],
+    "album": "Currents",
+    "release_year": "2015",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-06-08T12:00:00Z",
+    "id": "sample-035",
+    "name": "Dreams",
+    "artists": [
+      "Fleetwood Mac"
+    ],
+    "artist_ids": [
+      "sample-artist-fleetwood-mac"
+    ],
+    "album": "Rumours",
+    "release_year": "1977",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-05-13T12:00:00Z",
+    "id": "sample-015",
+    "name": "Nights",
+    "artists": [
+      "Frank Ocean"
+    ],
+    "artist_ids": [
+      "sample-artist-frank-ocean"
+    ],
+    "album": "Blonde",
+    "release_year": "2016",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-03-22T12:00:00Z",
+    "id": "sample-025",
+    "name": "Nightcall",
+    "artists": [
+      "Kavinsky"
+    ],
+    "artist_ids": [
+      "sample-artist-kavinsky"
+    ],
+    "album": "OutRun",
+    "release_year": "2013",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-05-15T12:00:00Z",
+    "id": "sample-007",
+    "name": "Last Nite",
+    "artists": [
+      "The Strokes"
+    ],
+    "artist_ids": [
+      "sample-artist-the-strokes"
+    ],
+    "album": "Is This It",
+    "release_year": "2001",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-06-25T12:00:00Z",
+    "id": "sample-030",
+    "name": "Space Song",
+    "artists": [
+      "Beach House"
+    ],
+    "artist_ids": [
+      "sample-artist-beach-house"
+    ],
+    "album": "Depression Cherry",
+    "release_year": "2015",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-02-01T12:00:00Z",
+    "id": "sample-028",
+    "name": "Gosh",
+    "artists": [
+      "Jamie xx"
+    ],
+    "artist_ids": [
+      "sample-artist-jamie-xx"
+    ],
+    "album": "In Colour",
+    "release_year": "2015",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-08-20T12:00:00Z",
+    "id": "sample-018",
+    "name": "Good Days",
+    "artists": [
+      "SZA"
+    ],
+    "artist_ids": [
+      "sample-artist-sza"
+    ],
+    "album": "SOS",
+    "release_year": "2022",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-10-04T12:00:00Z",
+    "id": "sample-031",
+    "name": "Myth",
+    "artists": [
+      "Beach House"
+    ],
+    "artist_ids": [
+      "sample-artist-beach-house"
+    ],
+    "album": "Bloom",
+    "release_year": "2012",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-02-18T12:00:00Z",
+    "id": "sample-029",
+    "name": "Breathe Deeper",
+    "artists": [
+      "Tame Impala"
+    ],
+    "artist_ids": [
+      "sample-artist-tame-impala"
+    ],
+    "album": "The Slow Rush",
+    "release_year": "2020",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-04-17T12:00:00Z",
+    "id": "sample-019",
+    "name": "Kill Bill",
+    "artists": [
+      "SZA"
+    ],
+    "artist_ids": [
+      "sample-artist-sza"
+    ],
+    "album": "SOS",
+    "release_year": "2022",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-05-05T12:00:00Z",
+    "id": "sample-001",
+    "name": "505",
+    "artists": [
+      "Arctic Monkeys"
+    ],
+    "artist_ids": [
+      "sample-artist-arctic-monkeys"
+    ],
+    "album": "Favourite Worst Nightmare",
+    "release_year": "2007",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-06-03T12:00:00Z",
+    "id": "sample-032",
+    "name": "Karma Police",
+    "artists": [
+      "Radiohead"
+    ],
+    "artist_ids": [
+      "sample-artist-radiohead"
+    ],
+    "album": "OK Computer",
+    "release_year": "1997",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-04-12T12:00:00Z",
+    "id": "sample-002",
+    "name": "R U Mine?",
+    "artists": [
+      "Arctic Monkeys"
+    ],
+    "artist_ids": [
+      "sample-artist-arctic-monkeys"
+    ],
+    "album": "AM",
+    "release_year": "2013",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-05-06T12:00:00Z",
+    "id": "sample-013",
+    "name": "Sofia",
+    "artists": [
+      "Clairo"
+    ],
+    "artist_ids": [
+      "sample-artist-clairo"
+    ],
+    "album": "Immunity",
+    "release_year": "2019",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-08-27T12:00:00Z",
+    "id": "sample-026",
+    "name": "Kiara",
+    "artists": [
+      "Bonobo"
+    ],
+    "artist_ids": [
+      "sample-artist-bonobo"
+    ],
+    "album": "Black Sands",
+    "release_year": "2010",
+    "url": null,
+    "image": null,
+    "popularity": null
+  },
+  {
+    "added_at": "2026-09-23T12:00:00Z",
+    "id": "sample-020",
+    "name": "See You Again",
+    "artists": [
+      "Tyler, The Creator"
+    ],
+    "artist_ids": [
+      "sample-artist-tyler,-the-creator"
+    ],
+    "album": "Flower Boy",
+    "release_year": "2017",
+    "url": null,
+    "image": null,
+    "popularity": null
+  }
+]

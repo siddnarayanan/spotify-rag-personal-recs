@@ -1,0 +1,803 @@
+{
+  "short_term": [
+    {
+      "id": "sample-003",
+      "name": "The Less I Know The Better",
+      "artists": [
+        "Tame Impala"
+      ],
+      "artist_ids": [
+        "sample-artist-tame-impala"
+      ],
+      "album": "Currents",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-004",
+      "name": "Let It Happen",
+      "artists": [
+        "Tame Impala"
+      ],
+      "artist_ids": [
+        "sample-artist-tame-impala"
+      ],
+      "album": "Currents",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-015",
+      "name": "Nights",
+      "artists": [
+        "Frank Ocean"
+      ],
+      "artist_ids": [
+        "sample-artist-frank-ocean"
+      ],
+      "album": "Blonde",
+      "release_year": "2016",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-016",
+      "name": "Pink + White",
+      "artists": [
+        "Frank Ocean"
+      ],
+      "artist_ids": [
+        "sample-artist-frank-ocean"
+      ],
+      "album": "Blonde",
+      "release_year": "2016",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-027",
+      "name": "Loud Places",
+      "artists": [
+        "Jamie xx"
+      ],
+      "artist_ids": [
+        "sample-artist-jamie-xx"
+      ],
+      "album": "In Colour",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-028",
+      "name": "Gosh",
+      "artists": [
+        "Jamie xx"
+      ],
+      "artist_ids": [
+        "sample-artist-jamie-xx"
+      ],
+      "album": "In Colour",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-030",
+      "name": "Space Song",
+      "artists": [
+        "Beach House"
+      ],
+      "artist_ids": [
+        "sample-artist-beach-house"
+      ],
+      "album": "Depression Cherry",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-031",
+      "name": "Myth",
+      "artists": [
+        "Beach House"
+      ],
+      "artist_ids": [
+        "sample-artist-beach-house"
+      ],
+      "album": "Bloom",
+      "release_year": "2012",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-013",
+      "name": "Sofia",
+      "artists": [
+        "Clairo"
+      ],
+      "artist_ids": [
+        "sample-artist-clairo"
+      ],
+      "album": "Immunity",
+      "release_year": "2019",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-014",
+      "name": "Bags",
+      "artists": [
+        "Clairo"
+      ],
+      "artist_ids": [
+        "sample-artist-clairo"
+      ],
+      "album": "Immunity",
+      "release_year": "2019",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-018",
+      "name": "Good Days",
+      "artists": [
+        "SZA"
+      ],
+      "artist_ids": [
+        "sample-artist-sza"
+      ],
+      "album": "SOS",
+      "release_year": "2022",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-019",
+      "name": "Kill Bill",
+      "artists": [
+        "SZA"
+      ],
+      "artist_ids": [
+        "sample-artist-sza"
+      ],
+      "album": "SOS",
+      "release_year": "2022",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-000",
+      "name": "Do I Wanna Know?",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "artist_ids": [
+        "sample-artist-arctic-monkeys"
+      ],
+      "album": "AM",
+      "release_year": "2013",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-001",
+      "name": "505",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "artist_ids": [
+        "sample-artist-arctic-monkeys"
+      ],
+      "album": "Favourite Worst Nightmare",
+      "release_year": "2007",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-026",
+      "name": "Kiara",
+      "artists": [
+        "Bonobo"
+      ],
+      "artist_ids": [
+        "sample-artist-bonobo"
+      ],
+      "album": "Black Sands",
+      "release_year": "2010",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-010",
+      "name": "Kyoto",
+      "artists": [
+        "Phoebe Bridgers"
+      ],
+      "artist_ids": [
+        "sample-artist-phoebe-bridgers"
+      ],
+      "album": "Punisher",
+      "release_year": "2020",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-011",
+      "name": "Motion Sickness",
+      "artists": [
+        "Phoebe Bridgers"
+      ],
+      "artist_ids": [
+        "sample-artist-phoebe-bridgers"
+      ],
+      "album": "Stranger in the Alps",
+      "release_year": "2017",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-025",
+      "name": "Nightcall",
+      "artists": [
+        "Kavinsky"
+      ],
+      "artist_ids": [
+        "sample-artist-kavinsky"
+      ],
+      "album": "OutRun",
+      "release_year": "2013",
+      "url": null,
+      "image": null,
+      "popularity": null
+    }
+  ],
+  "medium_term": [
+    {
+      "id": "sample-000",
+      "name": "Do I Wanna Know?",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "artist_ids": [
+        "sample-artist-arctic-monkeys"
+      ],
+      "album": "AM",
+      "release_year": "2013",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-001",
+      "name": "505",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "artist_ids": [
+        "sample-artist-arctic-monkeys"
+      ],
+      "album": "Favourite Worst Nightmare",
+      "release_year": "2007",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-003",
+      "name": "The Less I Know The Better",
+      "artists": [
+        "Tame Impala"
+      ],
+      "artist_ids": [
+        "sample-artist-tame-impala"
+      ],
+      "album": "Currents",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-004",
+      "name": "Let It Happen",
+      "artists": [
+        "Tame Impala"
+      ],
+      "artist_ids": [
+        "sample-artist-tame-impala"
+      ],
+      "album": "Currents",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-015",
+      "name": "Nights",
+      "artists": [
+        "Frank Ocean"
+      ],
+      "artist_ids": [
+        "sample-artist-frank-ocean"
+      ],
+      "album": "Blonde",
+      "release_year": "2016",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-016",
+      "name": "Pink + White",
+      "artists": [
+        "Frank Ocean"
+      ],
+      "artist_ids": [
+        "sample-artist-frank-ocean"
+      ],
+      "album": "Blonde",
+      "release_year": "2016",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-006",
+      "name": "Reptilia",
+      "artists": [
+        "The Strokes"
+      ],
+      "artist_ids": [
+        "sample-artist-the-strokes"
+      ],
+      "album": "Room on Fire",
+      "release_year": "2003",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-007",
+      "name": "Last Nite",
+      "artists": [
+        "The Strokes"
+      ],
+      "artist_ids": [
+        "sample-artist-the-strokes"
+      ],
+      "album": "Is This It",
+      "release_year": "2001",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-008",
+      "name": "Alright",
+      "artists": [
+        "Mac DeMarco"
+      ],
+      "artist_ids": [
+        "sample-artist-mac-demarco"
+      ],
+      "album": "Salad Days",
+      "release_year": "2014",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-009",
+      "name": "Chamber of Reflection",
+      "artists": [
+        "Mac DeMarco"
+      ],
+      "artist_ids": [
+        "sample-artist-mac-demarco"
+      ],
+      "album": "Salad Days",
+      "release_year": "2014",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-010",
+      "name": "Kyoto",
+      "artists": [
+        "Phoebe Bridgers"
+      ],
+      "artist_ids": [
+        "sample-artist-phoebe-bridgers"
+      ],
+      "album": "Punisher",
+      "release_year": "2020",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-011",
+      "name": "Motion Sickness",
+      "artists": [
+        "Phoebe Bridgers"
+      ],
+      "artist_ids": [
+        "sample-artist-phoebe-bridgers"
+      ],
+      "album": "Stranger in the Alps",
+      "release_year": "2017",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-020",
+      "name": "See You Again",
+      "artists": [
+        "Tyler, The Creator"
+      ],
+      "artist_ids": [
+        "sample-artist-tyler,-the-creator"
+      ],
+      "album": "Flower Boy",
+      "release_year": "2017",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-021",
+      "name": "EARFQUAKE",
+      "artists": [
+        "Tyler, The Creator"
+      ],
+      "artist_ids": [
+        "sample-artist-tyler,-the-creator"
+      ],
+      "album": "IGOR",
+      "release_year": "2019",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-018",
+      "name": "Good Days",
+      "artists": [
+        "SZA"
+      ],
+      "artist_ids": [
+        "sample-artist-sza"
+      ],
+      "album": "SOS",
+      "release_year": "2022",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-019",
+      "name": "Kill Bill",
+      "artists": [
+        "SZA"
+      ],
+      "artist_ids": [
+        "sample-artist-sza"
+      ],
+      "album": "SOS",
+      "release_year": "2022",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-024",
+      "name": "Midnight City",
+      "artists": [
+        "M83"
+      ],
+      "artist_ids": [
+        "sample-artist-m83"
+      ],
+      "album": "Hurry Up, We're Dreaming",
+      "release_year": "2011",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-013",
+      "name": "Sofia",
+      "artists": [
+        "Clairo"
+      ],
+      "artist_ids": [
+        "sample-artist-clairo"
+      ],
+      "album": "Immunity",
+      "release_year": "2019",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-014",
+      "name": "Bags",
+      "artists": [
+        "Clairo"
+      ],
+      "artist_ids": [
+        "sample-artist-clairo"
+      ],
+      "album": "Immunity",
+      "release_year": "2019",
+      "url": null,
+      "image": null,
+      "popularity": null
+    }
+  ],
+  "long_term": [
+    {
+      "id": "sample-032",
+      "name": "Karma Police",
+      "artists": [
+        "Radiohead"
+      ],
+      "artist_ids": [
+        "sample-artist-radiohead"
+      ],
+      "album": "OK Computer",
+      "release_year": "1997",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-033",
+      "name": "Weird Fishes/Arpeggi",
+      "artists": [
+        "Radiohead"
+      ],
+      "artist_ids": [
+        "sample-artist-radiohead"
+      ],
+      "album": "In Rainbows",
+      "release_year": "2007",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-000",
+      "name": "Do I Wanna Know?",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "artist_ids": [
+        "sample-artist-arctic-monkeys"
+      ],
+      "album": "AM",
+      "release_year": "2013",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-001",
+      "name": "505",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "artist_ids": [
+        "sample-artist-arctic-monkeys"
+      ],
+      "album": "Favourite Worst Nightmare",
+      "release_year": "2007",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-006",
+      "name": "Reptilia",
+      "artists": [
+        "The Strokes"
+      ],
+      "artist_ids": [
+        "sample-artist-the-strokes"
+      ],
+      "album": "Room on Fire",
+      "release_year": "2003",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-007",
+      "name": "Last Nite",
+      "artists": [
+        "The Strokes"
+      ],
+      "artist_ids": [
+        "sample-artist-the-strokes"
+      ],
+      "album": "Is This It",
+      "release_year": "2001",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-015",
+      "name": "Nights",
+      "artists": [
+        "Frank Ocean"
+      ],
+      "artist_ids": [
+        "sample-artist-frank-ocean"
+      ],
+      "album": "Blonde",
+      "release_year": "2016",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-016",
+      "name": "Pink + White",
+      "artists": [
+        "Frank Ocean"
+      ],
+      "artist_ids": [
+        "sample-artist-frank-ocean"
+      ],
+      "album": "Blonde",
+      "release_year": "2016",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-003",
+      "name": "The Less I Know The Better",
+      "artists": [
+        "Tame Impala"
+      ],
+      "artist_ids": [
+        "sample-artist-tame-impala"
+      ],
+      "album": "Currents",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-004",
+      "name": "Let It Happen",
+      "artists": [
+        "Tame Impala"
+      ],
+      "artist_ids": [
+        "sample-artist-tame-impala"
+      ],
+      "album": "Currents",
+      "release_year": "2015",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-034",
+      "name": "Heroes",
+      "artists": [
+        "David Bowie"
+      ],
+      "artist_ids": [
+        "sample-artist-david-bowie"
+      ],
+      "album": "\"Heroes\"",
+      "release_year": "1977",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-035",
+      "name": "Dreams",
+      "artists": [
+        "Fleetwood Mac"
+      ],
+      "artist_ids": [
+        "sample-artist-fleetwood-mac"
+      ],
+      "album": "Rumours",
+      "release_year": "1977",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-022",
+      "name": "Redbone",
+      "artists": [
+        "Childish Gambino"
+      ],
+      "artist_ids": [
+        "sample-artist-childish-gambino"
+      ],
+      "album": "\"Awaken, My Love!\"",
+      "release_year": "2016",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-036",
+      "name": "Hey Jude",
+      "artists": [
+        "The Beatles"
+      ],
+      "artist_ids": [
+        "sample-artist-the-beatles"
+      ],
+      "album": "Hey Jude",
+      "release_year": "1968",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-008",
+      "name": "Alright",
+      "artists": [
+        "Mac DeMarco"
+      ],
+      "artist_ids": [
+        "sample-artist-mac-demarco"
+      ],
+      "album": "Salad Days",
+      "release_year": "2014",
+      "url": null,
+      "image": null,
+      "popularity": null
+    },
+    {
+      "id": "sample-009",
+      "name": "Chamber of Reflection",
+      "artists": [
+        "Mac DeMarco"
+      ],
+      "artist_ids": [
+        "sample-artist-mac-demarco"
+      ],
+      "album": "Salad Days",
+      "release_year": "2014",
+      "url": null,
+      "image": null,
+      "popularity": null
+    }
+  ]
+}
