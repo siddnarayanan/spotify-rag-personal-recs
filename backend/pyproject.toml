@@ -15,6 +15,7 @@ dependencies = [
     "sentence-transformers>=6.3.0",
     "spotipy>=2.26.0",
     "sse-starlette>=3.7.0",
+    "torch>=2.15.0",
 ]
 
 [tool.ruff]
@@ -33,3 +34,12 @@ dev = [
     "pytest>=9.2.0",
     "ruff>=0.17.5",
 ]
+
+# Use CPU-only PyTorch wheels on Linux (CI / servers); macOS wheels are already CPU/MPS.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
